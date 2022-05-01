@@ -142,10 +142,10 @@ const Countdown = ({backgroundColor, time}) => {
           </div>
       </div>
       <div className='buttons'>
-        {!timerOn && (hora == 0 && minuto == 0 && segundo == 0) && (<button onClick={() => {setTimerOn(true);setHora(0);setMinuto(1);setSegundo(30)}}>Encender</button>)}
-        {timerOn && (<button onClick={() => {setTimerOn(false)}}>Pausa</button>)}
-        {!timerOn && (segundo > 0 || minuto > 0) && (<button onClick={continuarBoton}>Continuar</button>)}
-        {!timerOn && (segundo > 0 || minuto > 0) && (<button onClick={() => {setHora(0);setMinuto(1);setSegundo(30)}}>Resetear</button>)} 
+        {!timerOn && (hora == 0 && minuto == 0 && segundo == 0) && (<button className="botonWatch" onClick={() => {setTimerOn(true);setHora(0);setMinuto(1);setSegundo(30)}}>Encender</button>)}
+        {timerOn && (<button className="botonWatch" onClick={() => {setTimerOn(false)}}>Pausa</button>)}
+        {!timerOn && (segundo > 0 || minuto > 0) && (<button className="botonWatch" onClick={continuarBoton}>Continuar</button>)}
+        {!timerOn && (segundo > 0 || minuto > 0) && (<button className="botonWatch" onClick={() => {setHora(0);setMinuto(1);setSegundo(30)}}>Resetear</button>)} 
       </div>
     </React.Fragment>
   )

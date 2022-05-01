@@ -149,7 +149,7 @@ const Countup = ({backgroundColor, time}) => {
         {!timerOn && (hora == 0 && minuto == 0 && segundo == 0) && (<button className="botonWatch" onClick={() => {setTimerOn(true)}}>Encender</button>)}
         {timerOn && (<button className="botonWatch" onClick={() => {setTimerOn(false)}}>Pausa</button>)}
         {!timerOn && (segundo > 0 || minuto > 0) && (<button className="botonWatch" onClick={continuarBoton}>Continuar</button>)}
-        {!timerOn && (segundo > 0 || minuto > 0) && (<button className="botonWatch" onClick={() => {setHora(23);setMinuto(59);setSegundo(33)}}>Resetear</button>)} 
+        {!timerOn && (segundo > 0 || minuto > 0) && (<button className="botonWatch" onClick={() => {setHora(0);setMinuto(0);setSegundo(0)}}>Resetear</button>)} 
       </div>
     </React.Fragment>
   )
