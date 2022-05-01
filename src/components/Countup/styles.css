@@ -1,0 +1,156 @@
+#root {
+    display: flex;
+    justify-content: center;
+    height: 107vh;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#time
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px; /*para agregar un espacio entre los elementos*/
+
+}
+
+#time .circle
+{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#time .circle svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+#time .circle svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 4;
+    stroke-linecap: round; /*la punta de una recta, como es un circulo no se nota*/
+    stroke: #191919;
+    transform: translate(5px, 5px);
+    transition: all 1s linear;
+}
+
+#time .circle svg circle
+{
+    
+}
+
+#time .circle svg circle
+{
+    
+}
+
+#time .circle svg circle
+{
+    
+}
+
+#hh /*por defecto tiene un z-index mayor*/
+{
+    stroke: #ff2972 !important;
+    stroke-dasharray: 440;
+}
+
+#mm
+{
+    stroke: #fee800 !important;
+    stroke-dasharray: 440;
+}
+
+#ss
+{
+    stroke: #04fc43 !important;
+    stroke-dasharray: 440; /*va llenando el borde, dejando el borde negro oculto si esta en 440*/
+}
+
+#time div
+{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 42px;
+}
+
+.dots
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 100;
+    transition: all 1s linear;
+}
+
+.dots.hour_dot::before
+{
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ff2972;
+    box-shadow: 0 0 20px #ff2972, 0 0 60px #ff2972;
+}
+
+.dots.minute_dot::before
+{
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fee800;
+    box-shadow: 0 0 20px #fee800, 0 0 60px #fee800;
+}
+
+.dots.second_dot::before
+{
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #04fc43;
+    box-shadow: 0 0 20px #04fc43, 0 0 60px #04fc43;
+}
+
+span{
+    font-size: 19px;
+}
+
+#buttons
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.botonWatch {
+    width: 150px;
+    height: 94px;
+    border-radius: 18%;
+    font-size: 20px;
+}

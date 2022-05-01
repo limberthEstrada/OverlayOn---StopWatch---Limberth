@@ -1,0 +1,11 @@
+- Hooks
+    - useState: Lo usé para que mi componente del timer tenga datos que me van a permitir la funcionalidad del mismo. Al tener almacenado esos datos, es sólo aplicar lógica para que funcione los timers.
+    - useEffect: Básicamente lo usé para los botones interactivos del timer. Era necesario acceder al ciclo de vida del componente para poder realizar funcionalidades cuando el componente se renderice la primera vez, cuando se actualice (que eso pasa si interactuamos con algunos botones) y cuando el componente se desmonte
+    - useRef: lo utilicé para aplicar un poco de javascript para darle dinamismo a los bordes/pelotas de colores, todo siempre en pos de un buen estilo
+- createGlobalStyle: utilicé este método para poder cambiar el color de fondo de todo el body del componente, esto con el fin de cumplir la actividad de que se pueda cambiar el color de fondo usando los accesorios que ya venían por defecto en el StoryBook.
+- setInterval: lo utilicé para que el tiempo empiece a circular y tambien para gestionar el ritmo de cómo lo hará.
+- <React.Fragment>: usé esto porque me recomendaron que es para encerrar todo el código JSX en un bloque que equivale a un <div>, ya que para renderizar un componente es obligatorio renderizar todo anidado dentro de una sola etiqueta
+- <svg>: utilicé esta etiqueta para trabajar con elementos geométricos y aprovechar sus propiedades/elementos semánticos para dar un estilo espectacular
+
+
+PD: Me faltó que desde los accesorios, específicamente en el apartado de time en el que aparece un array para establecer o fijar tiempos, se pueda interactuar dinámicamente con el timer
